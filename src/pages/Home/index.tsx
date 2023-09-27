@@ -1,4 +1,5 @@
 import { useExtracts } from "@/services/extract/extract.hooks";
+import CardHome from "./components/Card";
 
 
 
@@ -7,7 +8,7 @@ function Home() {
 
   console.log('data', data)
   return (
-    <div>Hello</div>
+    <CardHome/>
   )
 }
 
