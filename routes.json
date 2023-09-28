@@ -1,0 +1,4 @@
+{
+  "/summary": "/transactions_summary",
+  "/items/:id": "/transactions/:id"
+}
