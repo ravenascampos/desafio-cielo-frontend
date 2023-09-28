@@ -11,10 +11,13 @@ import PointOfSaleIcon from '@mui/icons-material/PointOfSale';
 import ReceiptIcon from '@mui/icons-material/Receipt';
 import RequestQuoteIcon from '@mui/icons-material/RequestQuote';
 import ContactlessIcon from '@mui/icons-material/Contactless';
+import Header from "@/components/Header";
 
 export default function DetailsPage() {
   return (
-    <Box
+    <Box>
+      <Header/>
+      <Box
       sx={{
         border: 'solid',
         borderColor: '#334155',
@@ -90,5 +93,7 @@ export default function DetailsPage() {
         <Divider/>
         <CardDetails/>
     </Box>
+    </Box>
+    
   )
 }
