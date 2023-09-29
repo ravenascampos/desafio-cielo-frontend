@@ -6,7 +6,7 @@ type Props = {
   icon?: React.ReactNode;
 }
 
-export default function TextDetails({ title, text, icon }: Props) {
+export function TextDetails({ title, text, icon }: Props) {
   return (
     <Grid
       container
