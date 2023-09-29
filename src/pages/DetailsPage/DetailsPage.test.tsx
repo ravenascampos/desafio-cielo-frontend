@@ -7,7 +7,7 @@ import { describe, expect, test } from 'vitest'
  import { DetailsPage } from '.'
 
 describe('DetailsPage', () => {
-  test('renderiza o componente DetailsPage corretamente', () => {
+  test('checks if the CardTransactions is rendering', () => {
     const { getByText, debug } = render(<DetailsPage/>)
     {debug}
     expect(getByText('Detalhes')).toBeInTheDocument();
