@@ -1,14 +1,27 @@
-import { useExtracts } from "@/services/extract/extract.hooks";
+import { useTransactions } from "@/services/extract/extract.hooks";
+import { Box } from "@mui/material";
+import { Header } from "@/components/Header";
 
 
 
-function Home() {
-  const {data} = useExtracts();
+export function Home() {
+  const {data} = useTransactions();
 
   console.log('data', data)
   return (
-    <div>Hello</div>
+    <Box>
+       <Header/>
+      <Box
+        sx={{
+          position:'absolute',
+          top: '50%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)'
+        }}
+      >
+    </Box>
+    </Box>
+    
+    
   )
 }
-
-export default Home
