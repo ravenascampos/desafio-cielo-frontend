@@ -12,7 +12,7 @@ export function Menu() {
       	<Link
 					underline='none'
 					component={RouterLink}
-					to='/transactions'
+					to='/items'
 				>
         	<MenuItem
 						sx={{ padding: '10px' }}

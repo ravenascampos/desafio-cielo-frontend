@@ -9,15 +9,14 @@ import { CssBaseline } from "@mui/material";
 function App() {
 
   return (
-    <QueryClientProvider client={queryClient}>
+      <QueryClientProvider client={queryClient}>
       <ColorModeProvider>
         <MaterialUiConfigProvider>
           <CssBaseline/>
           <RouterProvider router={router}/>
         </MaterialUiConfigProvider> 
       </ColorModeProvider>
-   </QueryClientProvider>
-   
+    </QueryClientProvider> 
   );
 }
 
