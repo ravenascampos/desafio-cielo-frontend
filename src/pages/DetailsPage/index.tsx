@@ -16,7 +16,7 @@ import ContactlessIcon from '@mui/icons-material/Contactless';
 import { Header } from "@/components/Header";
 import * as dayjs from 'dayjs'
 import { useParams } from "react-router-dom";
-import { useTransactionDetails } from "@/hooks/DetailsTransaction/useTransactionsDetails";
+import { useTransactionDetails } from "@/services/detailsTransaction/useTransactionsDetails.hooks";
 import { LoadingDetails } from "./components/LoadingDetails";
 import { ErrorDetails } from "./components/ErrorDetails";
 
