@@ -1,4 +1,4 @@
-import {Button, Card, CardActions, CardContent, Chip, Divider, Grid, Typography} from '@mui/material'
+import {Button, Card, CardActions, CardContent, Chip, Divider, Grid, Link, Typography} from '@mui/material'
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import AddIcon from '@mui/icons-material/Add';
 import CreditCardIcon from '@mui/icons-material/CreditCard';
@@ -7,9 +7,10 @@ import { cardTransactionsProps } from './cardTransactions.types';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import PendingIcon from '@mui/icons-material/Pending';
 import ErrorIcon from '@mui/icons-material/Error';
+import { Link as RouterLink } from "react-router-dom";
 
 export function CardTransactions({
-  date, status, netAmount, paymentType, cardBrand
+  id, date, status, netAmount, paymentType, cardBrand
 }:cardTransactionsProps) {
   return (
     <Card
@@ -87,10 +88,16 @@ export function CardTransactions({
           justifyContent: 'flex-end'
         }}
       >
-        <Button>  
-          Detalhes
-          <AddIcon fontSize='small'/>
-        </Button>
+        <Link
+          underline='none'
+          component={RouterLink}
+          to={`transactions/${id}`}
+        >
+          <Button>  
+            Detalhes
+            <AddIcon fontSize='small'/>
+          </Button>
+        </Link>
       </CardActions>
     </Card>
   )

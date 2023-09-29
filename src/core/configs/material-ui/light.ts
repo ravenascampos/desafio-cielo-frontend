@@ -16,6 +16,7 @@ export const lightTheme: ThemeOptions = {
     h1: {
       fontSize: '1.5rem',
       fontFamily: 'Montserrat',
+      fontWeight: 700
     },
     h2: {
       fontSize: '1.2rem',
