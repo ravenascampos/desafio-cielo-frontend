@@ -1,9 +1,9 @@
-type ExtractItem = {
+type Transaction = {
     id:string, 
     merchantId:string,
     paymentNod:number,
     cnpjRoot:number,
-    date:Date,
+    date:string,
     paymentType:string,
     cardBrand:string,
     authorizationCode:string,
@@ -21,4 +21,4 @@ type ExtractItem = {
     status:string
 }
 
-export type ExtractList = ExtractItem[]
+export type TransactionList = Transaction[]
