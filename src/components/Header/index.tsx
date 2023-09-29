@@ -14,7 +14,7 @@ export function Header() {
     setMobileOpen(!mobileOpen);
   }
   const [colorMode, toggleColorMode] = useColorMode();
-  const drawerWidth = 200
+  const drawerWidth = 180
 
   return (
     <Box

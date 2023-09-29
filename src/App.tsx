@@ -11,11 +11,10 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <ColorModeProvider>
-      <MaterialUiConfigProvider>
-        <CssBaseline/>
-        <RouterProvider router={router}/>
-      </MaterialUiConfigProvider>
-        
+        <MaterialUiConfigProvider>
+          <CssBaseline/>
+          <RouterProvider router={router}/>
+        </MaterialUiConfigProvider> 
       </ColorModeProvider>
    </QueryClientProvider>
    

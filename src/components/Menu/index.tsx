@@ -8,7 +8,7 @@ export function Menu() {
   
   return (
     <Box>
-    	<MenuList component='nav' sx={{width: '200px'}}>
+    	<MenuList component='nav' sx={{width: '180px'}}>
       	<Link
 					underline='none'
 					component={RouterLink}
