@@ -1,5 +1,5 @@
 import {Header} from "@/components/Header";
-import { useTransactions } from "@/services/extract/extract.hooks";
+import { useTransactions } from "@/services/transactions/transaction.hooks";
 import { Box, Grid, Typography, useMediaQuery, useTheme } from "@mui/material";
 import { CardTransactions } from "./components/CardTransactions";
 import * as dayjs from 'dayjs'
@@ -40,6 +40,7 @@ export function Transactions() {
         >
           {data?.map((item) => (
           <CardTransactions
+            key={item.id}
             date={dayjs(item.date).format('DD/MM/YYYY')}
             netAmount={new Intl.NumberFormat('pt-BR', {
               style: 'currency', currency: 'BRL'

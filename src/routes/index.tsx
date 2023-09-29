@@ -12,11 +12,11 @@ export const router = createBrowserRouter([
     errorElement: <NotFound/>
   },
   {
-    path: '/transactions',
+    path: '/items',
     element: <Transactions/>,
   },
   {
-    path: '/transactions/:id',
+    path: '/items/:id',
     element: <DetailsPage/>,
   },
   {

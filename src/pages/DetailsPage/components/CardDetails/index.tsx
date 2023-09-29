@@ -1,12 +1,17 @@
 import { Card, Grid, Typography } from "@mui/material";
+import { ReactNode } from "react";
 
-export function CardDetails() {
+
+type cardDetailsProps = {
+  cardBrand: ReactNode;
+  truncatedCardNumber: ReactNode;
+}
+export function CardDetails({cardBrand, truncatedCardNumber}:cardDetailsProps) {
   return (
     <Card
       sx={{
         marginTop: '24px',
-        width: '200px',
-        maxWidth: '250px',
+        width: '300px',
         padding: '40px',
         borderRadius: '12px',
         background: 'linear-gradient(45deg, #6366F1 0.92%, #9FA1FF 98.55%, #9FA1FF 98.55%)',
@@ -25,14 +30,14 @@ export function CardDetails() {
           display='flex'
           justifyContent='center'
         >
-          <Typography>**** **** **** 7328</Typography>
+          <Typography variant="h2" fontWeight={700}>{truncatedCardNumber}</Typography>
         </Grid>
         <Grid
           item
           display='flex'
           justifyContent='flex-end'
         >
-          <Typography>Mastercard</Typography>
+          <Typography variant="h3">{cardBrand}</Typography>
         </Grid>
       </Grid>
     </Card>

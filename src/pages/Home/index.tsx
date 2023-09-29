@@ -1,4 +1,4 @@
-import { useTransactions } from "@/services/extract/extract.hooks";
+import { useTransactions } from "@/services/transactions/transaction.hooks";
 import { Box } from "@mui/material";
 import { Header } from "@/components/Header";
 
