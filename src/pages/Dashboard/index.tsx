@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import { PieChartDashboard } from "./components/PieChart";
 
-export default function Dashboard() {
+export function Dashboard() {
   return (
     <Box>
       <PieChartDashboard

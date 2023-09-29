@@ -1,13 +1,15 @@
 
 import { Button, Grid, Link, Typography, useMediaQuery, useTheme } from "@mui/material";
-import darkImg  from '../../../images/notFoun-dark.png';
+import darkImg  from '../../../images/notFound-dark.png';
 import { Link as RouterLink } from "react-router-dom";
-// import lightImg from '../../../images/notFound-light.png'
+import lightImg from '../../../images/notFound-light.png'
+import { useColorMode } from "@/context";
 
 
 export function NotFound() {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+  const [colorMode] = useColorMode();
   return (
       <Grid
       container
@@ -39,19 +41,21 @@ export function NotFound() {
       <Grid
         mb={6}
       >
-      <img src={darkImg} alt='logo ada_store_challenge em dark mode' width={isMobile ? '250px' : '400px'}/>
-        {/* {
+        {
         colorMode === 'dark' ?
-          <img src={darkImg} alt='logo ada_store_challenge em dark mode' width={isMobile ? '250px' : '350px'}/> : 
-          <img src={lightImg} alt='logo ada_store_challenge em dark light' width={isMobile ? '250px' : '350px'}/>
-      } */}
+          <img src={darkImg} alt='error 404' width={isMobile ? '250px' : '350px'}/> : 
+          <img src={lightImg} alt='error 404' width={isMobile ? '250px' : '350px'}/>
+      }
       </Grid>
       <Grid>
       <Link
 					component={RouterLink}
 					to='/'
 				>
-        <Button variant='contained'>Voltar para a Home</Button>
+        <Button
+        sx={{ textTransform: 'none' }}
+        variant='contained'
+      >Voltar para a Home</Button>
       </Link>
       </Grid>
     </Grid>

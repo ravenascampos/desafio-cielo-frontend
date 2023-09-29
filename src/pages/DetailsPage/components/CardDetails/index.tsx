@@ -1,6 +1,6 @@
 import { Card, Grid, Typography } from "@mui/material";
 
-export default function CardDetails() {
+export function CardDetails() {
   return (
     <Card
       sx={{

@@ -4,31 +4,37 @@ import ReceiptIcon from '@mui/icons-material/Receipt';
 import { Link as RouterLink } from "react-router-dom";
 
 
-export default function Menu() {
+export function Menu() {
   
   return (
     <Box>
-    	<MenuList component='nav'>
+    	<MenuList component='nav' sx={{width: '200px'}}>
       	<Link
+					underline='none'
 					component={RouterLink}
 					to='/transactions'
 				>
-        	<MenuItem>
+        	<MenuItem
+						sx={{ padding: '10px' }}
+					>
           	<ListItemIcon>
-            	<ReceiptIcon/>
-            	<ListItemText primary='Transações'/>
+            	<ReceiptIcon color='primary'/>
+            	<ListItemText primary='Transações' sx={{marginLeft: '8px'}}/>
           	</ListItemIcon>
         	</MenuItem>
       	</Link>
-      	<Divider />
+      	<Divider/>
       	<Link
+					underline='none'
 					component={RouterLink}
 					to='/dashboard'
 				>
-        	<MenuItem>
+        	<MenuItem
+							sx={{ padding: '10px' }}
+					>
           	<ListItemIcon>
-            	<DashboardIcon/>
-            	<ListItemText primary='Dashboard'/>
+            	<DashboardIcon color='primary'/>
+            	<ListItemText primary='Dashboard' sx={{marginLeft: '8px'}}/>
           	</ListItemIcon>
         	</MenuItem>
        </Link> 

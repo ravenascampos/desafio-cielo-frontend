@@ -3,7 +3,7 @@ type ExtractItem = {
     merchantId:string,
     paymentNod:number,
     cnpjRoot:number,
-    date:Date,
+    date:string,
     paymentType:string,
     cardBrand:string,
     authorizationCode:string,

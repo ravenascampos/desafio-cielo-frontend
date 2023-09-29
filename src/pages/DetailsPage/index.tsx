@@ -1,6 +1,6 @@
 import { Box, Divider } from "@mui/material";
-import CardDetails from "./components/CardDetails";
-import TextDetails from "./components/TextDetails";
+import { CardDetails } from "./components/CardDetails";
+import { TextDetails } from "./components/TextDetails";
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
@@ -11,9 +11,9 @@ import PointOfSaleIcon from '@mui/icons-material/PointOfSale';
 import ReceiptIcon from '@mui/icons-material/Receipt';
 import RequestQuoteIcon from '@mui/icons-material/RequestQuote';
 import ContactlessIcon from '@mui/icons-material/Contactless';
-import Header from "@/components/Header";
+import { Header } from "@/components/Header";
 
-export default function DetailsPage() {
+export function DetailsPage() {
   return (
     <Box sx={{display: 'flex'}}>
       <Header/>
