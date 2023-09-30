@@ -12,14 +12,14 @@ export function Menu() {
       	<Link
 					underline='none'
 					component={RouterLink}
-					to='/transactions'
+					to='/'
 				>
         	<MenuItem
 						sx={{ padding: '10px' }}
 					>
           	<ListItemIcon>
             	<ReceiptIcon color='primary'/>
-            	<ListItemText primary='Transações' sx={{marginLeft: '8px'}}/>
+            	<ListItemText primary='Home' sx={{marginLeft: '8px'}}/>
           	</ListItemIcon>
         	</MenuItem>
       	</Link>
@@ -27,14 +27,14 @@ export function Menu() {
       	<Link
 					underline='none'
 					component={RouterLink}
-					to='/dashboard'
+					to='/items'
 				>
         	<MenuItem
 							sx={{ padding: '10px' }}
 					>
           	<ListItemIcon>
             	<DashboardIcon color='primary'/>
-            	<ListItemText primary='Dashboard' sx={{marginLeft: '8px'}}/>
+            	<ListItemText primary='Transações' sx={{marginLeft: '8px'}}/>
           	</ListItemIcon>
         	</MenuItem>
        </Link> 

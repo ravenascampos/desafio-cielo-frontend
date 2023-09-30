@@ -91,7 +91,7 @@ export function CardTransactions({
         <Link
           underline='none'
           component={RouterLink}
-          to={`transactions/${id}`}
+          to={`/items/${id}`}
         >
           <Button>  
             Detalhes
