@@ -1,4 +1,3 @@
-import { Dashboard } from '@/pages/Dashboard';
 import { DetailsPage } from '@/pages/DetailsPage';
 import { Home } from '@/pages/Home';
 import { Transactions } from '@/pages/Transactions';
@@ -19,8 +18,4 @@ export const router = createBrowserRouter([
     path: '/items/:id',
     element: <DetailsPage/>,
   },
-  {
-    path: '/dashboard',
-    element: <Dashboard/>,
-  }
 ])
