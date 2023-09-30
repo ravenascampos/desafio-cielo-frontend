@@ -7,8 +7,8 @@ import { describe, test } from 'vitest'
  import { render } from '@testing-library/react'
  import App from './App';
 
- describe('renderiza o componente App corretamente', () => {
-  test('verifica se o App está renderizando', () => {
+ describe('App component', () => {
+  test('checks if the App is rendering', () => {
     const {debug} = render(<App/>)
 
     debug()

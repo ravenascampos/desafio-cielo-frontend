@@ -7,7 +7,7 @@ import { render } from '@testing-library/react'
 import {CardTransactions} from '.'
 
 describe('CardTransactions', () => {
-  test('renderiza o componente CardTransactions corretamente', () => {
+  test('checks if the CardTransactions is rendering', () => {
     const {getByText, debug} = render(<CardTransactions 
       id='114606514478703'
       cardBrand='Mastercard'
